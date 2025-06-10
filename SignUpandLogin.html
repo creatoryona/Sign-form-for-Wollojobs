@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--@media---->
+
+    <meta name="description"
+    content="Dessie work WolloyeJobs wollo jobs">
+
+    <meta name="keywords"
+    content="dessie, wollo, dese," >
+  
+    <meta name="author"
+    content="Yonas hailekiros" >
+
+    <title>MembersForm</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="signupandloginstyle.css">
+
+    
+
+</head>
+<body>
+   <div class="allback" id="allback" >
+    
+<!-- <h1 >ወሎዬ ጆብስ </h1>
+  Sign up form -->
+        <div class="side signupside ">
+
+          <form action="1Mainpage.html" method="post" id="form" >
+            <!-- autocomplete="off" -->
+               <caption> Sign up | አዲስ አካዉንት</caption>
+               
+              <div id="Complete" style="color: green;">
+              
+              </div>
+              
+ <!-- First Name-->          
+               <input type="text"   id="fname" name="firstName" placeholder="First Name"  onkeypress="return /[a-zA-Z]/.test(event.key)">
+                <!-- Not to be changed inspect and to be used in js-->
+               <div class="error" id="fname-error" ></div>
+
+
+  <!-- Second Name-->
+               <input type="text"   id="lname" name="lastName" placeholder="Last Name"  onkeypress="return /[a-zA-Z]/.test(event.key)">
+                <!-- Not to be changed inspect and to be used in js-->
+               <div class="error" id="lname-error"></div>
+
+  <!-- email-->
+               <input type="email" id="email" name="email"placeholder="E-mail">
+                 <!-- Not to be changed inspect and to be used in js-->
+                <div class="error" id="email-error"></div>
+
+   <!-- Phone-->
+                  <input type="tel" id="phone" name="Phone"placeholder="Phone">
+
+                 <!-- Not to be changed inspect and to be used in js-->
+              <div class="error" id="phone-error"></div>
+
+  <!-- Password -->    
+          <div style="width: 100%;" >  
+               <input type="password" id="pass" name="password" placeholder="Password" required style="position: relative;">
+
+               <span>
+                <i class="fa-solid fa-eye" onclick="hide()"id="e1" style="position: absolute; right: -10px;  cursor: pointer;"></i>
+              </span>
+                 <!-- Not to be changed inspect and to be used in js-->
+                 <div class="error" id="pass-error"></div>
+            </div>  
+
+  <!--Confirm Password -->
+              <div style="width: 100%;"  >
+               <input type="password" id="cpass" name="C_password" placeholder="Confirm password" required style="width: 100%;">
+               
+               <span onclick="show()">
+                <i class="fa-solid fa-eye" id="e2" style="position: absolute; right: -10px;   cursor: pointer;"></i>
+               </span>
+               </div>
+                <!-- Not to be changed inspect and to be used in js-->
+               <div class="error" id="cpass-error">
+               </div>
+                    
+  
+              <!--Buttons-->
+            <div class="btns">
+
+               <button type="submit" >Sign Up</button>
+
+               <button type="button" class="signupin" id="signin" style="margin: 0;">Login</button>
+            </div>
+          </form>
+        </div>
+
+<!-- Sign in form -->
+       <div class="side signinside">
+          <form action="signin.php" method="post">
+            <caption>Login Form | መግቢያ ፎርም</caption>
+                <input type="email" name="email" placeholder="E-mail" required>
+
+                <input type="password" name="psssword" placeholder="Password" required>
+    
+                <!--Buttons-->
+                <div class="btns">
+ 
+                  <button type="submit" style="margin: 0;"> Login </button>
+ 
+                  <button  type="button" class="signupin" id="signup">Sign Up</button>
+                  
+
+                </div>
+          </form>
+       </div>
+
+<!-- Overlay Thing-->
+       <div class="alloverlay">
+           <div class="overlay">
+              <!--Overlay first one-->
+              <div class="overlay1 overlay-left">
+               <h1> እንኳን በደህና መጡ </h1>
+               <p>አዲስ አባል ለመሆን እባክዎን በትክክል መረጃዎን ፎርሙ ላይ ይሙሉ👉</p>
+
+              </div>
+
+              <!--Overlay Second one-->
+              <div class="overlay1 overlay-right">
+                <h1> እንኳን በደህና መጡ </h1>
+                <p> 👈ደንበኛችን እባክዎን አካዉንትዎን ፎርሙ ላይ ይሙሉ </p> 
+              </div>
+           </div>
+       </div>
+   </div>
+        </form>
+    </div>
+
+   <script src="signupandligin.js"></script>
+
+</body>
+</html>
